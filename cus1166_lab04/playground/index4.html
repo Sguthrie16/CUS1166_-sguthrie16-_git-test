@@ -1,0 +1,22 @@
+<<!DOCTYPE html>
+<html>
+<<head>
+  <<title>{{course}} Welcome Page!</title>
+  <<head>
+    <h1> Student roster for {{course}}</h1>
+    <<ul>
+      {% for student_name in the class_roster %}
+      {%if grade_view ==2%}
+      <li>{{student_name[0]}} grade is <span style="color:red">{{student[1]}}</li>
+
+      {%if grade_view ==1%}
+        <li>{{student_name[0]}} grade is <span style="color:red">{{student[1]}}</li>
+
+      {%if grade_view ==0%}
+          <li>{{student_name[0]}} grade is <span style="color:red">{{student[1]}}</li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </head>
+</head>
+</html>
