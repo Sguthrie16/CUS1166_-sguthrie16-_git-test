@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+  <style media="screen">
+  @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+    body{
+      background-color:#DCDCDC;
+    }
+
+    h1{
+      position:relative;
+      text-align:center;
+      font-family: Raleway, sans-serif;
+      font-weight: 400; 
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    h2{
+      text-align:center;
+      font-family: Raleway, sans-serif;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+    h3{
+      text-align:center;
+      font-family: Raleway, sans-serif;
+      font-weight: 400;
+    }
+    #School{
+      height:10%;
+      position:absolute;
+      left:0%;
+      background-color:#E2FEFC;
+      padding-right: 100%;
+      opacity: .4;
+      z-index:-1;
+    }
+  </style>
+</head>
+<body>
+
+  <img id="School" src="https://www.thirstproject.org/wp-content/uploads/2015/04/ico-school.png">
+  {% block content %}{% endblock %}
+
+</body>
+</html>
