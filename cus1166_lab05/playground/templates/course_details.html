@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for students in registeredstudents%}
+{{students.id}} , {{students.name}} , {{students.grade}}
+{%endfor%}
+{% endblock content %}

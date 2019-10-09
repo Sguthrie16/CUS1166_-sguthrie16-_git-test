@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>WELCOME!</h1>
+
+<form method="post action="/add_course">
+  ID:
+  <input type="text" id="id" value="">
+
+  Course Number:
+  <input type="text" course_number="Course Number" value="">
+  
+  Course Name:
+  <input type="text" course_title="Course Title" value="">
+  
+  <input type="submit" value="Submit">
+</form action="/add_course">
+<h2>Dispplay data</h2>
+{% for course in courses%}
+<a href=/register_student/<int:course_id?> >
+{{courses.id}} , {{courses.number}} , {{courses.title}}</a>
+{%endfor%}
+{% endblock content %}
